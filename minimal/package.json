@@ -1,0 +1,17 @@
+{
+  "name": "minimal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch --mode=development",
+	"prod": "webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.3.0",
+	"webpack": "^4.30.0"
+  }
+}
