@@ -4,15 +4,12 @@
  * @type {Object}
  */
 
+const env = process.env.NODE_ENV;
+
 module.exports = {
 
 	plugins: {
 		'autoprefixer': {},
-
-		// 'postcss-assets': {
-		// 	loadPaths: [ 'img/', 'fonts/' ],
-		// 	relative: true
-		// },
 
 		'postcss-pxtorem': {
 			rootValue: 16,
@@ -23,5 +20,7 @@ module.exports = {
 			mediaQuery: false,
 			minPixelValue: 2
 		},
+
+		'cssnano': env === 'production'
 	}
 };

@@ -17,6 +17,7 @@
 - `postcss-loader`: Process CSS with PostCSS for webpack, requires `postcss.config.js` configuration and needs plugins.
   - `autoprefixer`: Parse CSS and add vendor prefixes, does not add pollyfills and requires `.browserslistrc` or `browserslist` in `package.json` to target browsers.
   - `postcss-pxtorem`: Convert pixel units to rem.
+  - `cssnano`: compress css output, Webpack does not do it by default.
 
 ##### Plugins
 
