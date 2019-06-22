@@ -26,4 +26,5 @@
 ##### Others:
 
 - `file-loader`: File loaders for files like png|jpg|svg|jpeg|gif|ico
+- `image-webpack-loader`: Optimize images.
 

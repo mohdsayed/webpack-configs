@@ -3,6 +3,8 @@ const path = require( 'path' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' ); // https://webpack.js.org/plugins/mini-css-extract-plugin/
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 
+const env = process.env.NODE_ENV;
+
 module.exports = {
 	entry: {
 		main: './js/index.js',
@@ -39,13 +41,22 @@ module.exports = {
 			{
 				test: /\.(png|jpg|svg|jpeg|gif|ico)$/,
 				exclude: /node_modules/,
-				use: {
-					loader: 'file-loader',
-					options: {
-						name: '[path][name].[ext]',
-						publicPath: '../' // Added in the beginning, example ../images/img.png
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[path][name].[ext]',
+							publicPath: '../' // Added in the beginning, example ../images/img.png
+						}
+					},
+					{
+						loader: 'image-webpack-loader',
+						options: {
+							bypassOnDebug: true,
+							disable: 'production' !== env
+						}
 					}
-				}
+				]
 			},
 		]
 	},

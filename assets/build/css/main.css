@@ -1,6 +1,5 @@
 body {
-  background-color: red;
-  background-image: url(../images/sample-image.jpg); }
+  background-color: red; }
 
 .main {
   display: -webkit-box;
