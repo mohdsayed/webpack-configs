@@ -2,7 +2,6 @@ const path = require( 'path' );
 
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' ); // https://webpack.js.org/plugins/mini-css-extract-plugin/
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const env = process.env.NODE_ENV;
 
@@ -66,8 +65,5 @@ module.exports = {
 		new MiniCssExtractPlugin( {
 			filename: 'css/[name].css',
 		} ),
-		new BundleAnalyzerPlugin( {
-			openAnalyzer: 'analyse' === env
-		} )
 	]
 };
