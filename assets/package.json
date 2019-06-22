@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "NODE_ENV=development webpack --mode=development --watch",
 		"prod": "NODE_ENV=production webpack --mode=production",
-	  	"analyse": "webpack --profile --json > stats.json"
+	  	"analyse": "NODE_ENV=analyse webpack --profile --json > stats.json"
 	},
 	"keywords": [],
 	"author": "",

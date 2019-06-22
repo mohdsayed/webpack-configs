@@ -66,6 +66,8 @@ module.exports = {
 		new MiniCssExtractPlugin( {
 			filename: 'css/[name].css',
 		} ),
-		new BundleAnalyzerPlugin()
+		new BundleAnalyzerPlugin( {
+			openAnalyzer: 'analyse' === env
+		} )
 	]
 };
