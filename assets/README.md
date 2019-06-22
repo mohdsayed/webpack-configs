@@ -29,6 +29,7 @@
 
 - `file-loader`: File loaders for files like png|jpg|svg|jpeg|gif|ico
 - `image-webpack-loader`: Optimize images.
+- `webpack-bundle-analyzer`: Represents bundle content as convenient interactive zoomable treemap
 
 
 

@@ -1,0 +1,699 @@
+Webpack Bundle Analyzer is started at http://127.0.0.1:8888
+Use Ctrl+C to close it
+{
+  "errors": [],
+  "warnings": [
+    "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/"
+  ],
+  "version": "4.30.0",
+  "hash": "5c52120a6c3bf1860000",
+  "time": 644,
+  "builtAt": 1561197015767,
+  "publicPath": "",
+  "outputPath": "/Users/sayedtaqui/node-projects/webpack-configs/assets/build",
+  "assetsByChunkName": {
+    "main": [
+      "css/main.css",
+      "js/main.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "css/main.css",
+      "size": 63,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "js/main.js",
+      "size": 974,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "css/main.css",
+        "js/main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "css/main.css",
+        "js/main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 185,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "css/main.css",
+        "js/main.js"
+      ],
+      "hash": "fe6e7e0a76ff92b745d8",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+          "name": "./js/index.js",
+          "index": 0,
+          "index2": 2,
+          "size": 84,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 30,
+            "building": 228
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./js/index.js",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "import './../sass/style.scss';\n\nfunction test() {\n  console.warn('Test Function');\n}"
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+          "name": "./sass/style.scss",
+          "index": 1,
+          "index2": 1,
+          "size": 39,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+          "issuerId": 0,
+          "issuerName": "./js/index.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+              "name": "./js/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 228
+              }
+            }
+          ],
+          "profile": {
+            "factory": 6,
+            "building": 341
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+              "module": "./js/index.js",
+              "moduleName": "./js/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./../sass/style.scss",
+              "loc": "1:0-30"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "// extracted by mini-css-extract-plugin"
+        },
+        {
+          "id": "",
+          "identifier": "css /Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss 0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+          "index": 2,
+          "index2": 0,
+          "size": 62,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+          "issuerId": 1,
+          "issuerName": "./sass/style.scss",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+              "name": "./js/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 228
+              }
+            },
+            {
+              "id": 1,
+              "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "name": "./sass/style.scss",
+              "profile": {
+                "factory": 6,
+                "building": 341
+              }
+            }
+          ],
+          "profile": {
+            "factory": 0,
+            "building": 1
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "module": "./sass/style.scss",
+              "moduleName": "./sass/style.scss"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./js/index.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+      "name": "./js/index.js",
+      "index": 0,
+      "index2": 2,
+      "size": 84,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 30,
+        "building": 228
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./js/index.js",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is an entry point"
+      ],
+      "depth": 0,
+      "source": "import './../sass/style.scss';\n\nfunction test() {\n  console.warn('Test Function');\n}"
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+      "name": "./sass/style.scss",
+      "index": 1,
+      "index2": 1,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+      "issuerId": 0,
+      "issuerName": "./js/index.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+          "name": "./js/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 228
+          }
+        }
+      ],
+      "profile": {
+        "factory": 6,
+        "building": 341
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+          "module": "./js/index.js",
+          "moduleName": "./js/index.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./../sass/style.scss",
+          "loc": "1:0-30"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "// extracted by mini-css-extract-plugin"
+    },
+    {
+      "id": "",
+      "identifier": "css /Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss 0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+      "index": 2,
+      "index2": 0,
+      "size": 62,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+      "issuerId": 1,
+      "issuerName": "./sass/style.scss",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/babel-loader/lib/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/js/index.js",
+          "name": "./js/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 228
+          }
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+          "name": "./sass/style.scss",
+          "profile": {
+            "factory": 6,
+            "building": 341
+          }
+        }
+      ],
+      "profile": {
+        "factory": 0,
+        "building": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+          "module": "./sass/style.scss",
+          "moduleName": "./sass/style.scss"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    }
+  ],
+  "filteredModules": 0,
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "",
+      "outputPath": "/Users/sayedtaqui/node-projects/webpack-configs/assets/build",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 2882,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "f8529962bd58961004d9",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": 0,
+              "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+              "index": 0,
+              "index2": 1,
+              "size": 205,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 2,
+                "building": 306
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source": "exports = module.exports = require(\"../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n  background-color: red; }\\n\\n.main {\\n  display: flex; }\\n\", \"\"]);\n"
+            },
+            {
+              "id": 1,
+              "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2677,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "issuerId": 0,
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+              "issuerPath": [
+                {
+                  "id": 0,
+                  "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+                  "profile": {
+                    "factory": 2,
+                    "building": 306
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 1,
+                "building": 9
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": 0,
+                  "moduleIdentifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+                  "type": "cjs require",
+                  "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "1:27-84"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \"{\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      // eslint-disable-next-line prefer-destructuring\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = modules[_i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = \"(\".concat(item[2], \") and (\").concat(mediaQuery, \")\");\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot).concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+          "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+          "index": 0,
+          "index2": 1,
+          "size": 205,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 2,
+            "building": 306
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "!!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "loc": "mini-css-extract-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "exports = module.exports = require(\"../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n  background-color: red; }\\n\\n.main {\\n  display: flex; }\\n\", \"\"]);\n"
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/runtime/api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2677,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+          "issuerId": 0,
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+              "profile": {
+                "factory": 2,
+                "building": 306
+              }
+            }
+          ],
+          "profile": {
+            "factory": 1,
+            "building": 9
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/css-loader/dist/cjs.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/postcss-loader/src/index.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/node_modules/sass-loader/lib/loader.js!/Users/sayedtaqui/node-projects/webpack-configs/assets/sass/style.scss",
+              "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./sass/style.scss",
+              "type": "cjs require",
+              "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "1:27-84"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \"{\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      // eslint-disable-next-line prefer-destructuring\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = modules[_i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = \"(\".concat(item[2], \") and (\").concat(mediaQuery, \")\");\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot).concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}"
+        }
+      ],
+      "filteredModules": 0,
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js!node_modules/sass-loader/lib/loader.js!sass/style.scss"
+    }
+  ]
+}

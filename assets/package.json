@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "NODE_ENV=development webpack --mode=development --watch",
-		"prod": "NODE_ENV=production webpack --mode=production"
+		"prod": "NODE_ENV=production webpack --mode=production",
+	  	"analyse": "webpack --profile --json > stats.json"
 	},
 	"keywords": [],
 	"author": "",
@@ -30,6 +31,7 @@
 		"postcss-pxtorem": "^4.0.1",
 		"sass-loader": "^7.1.0",
 		"webpack": "^4.30.0",
+		"webpack-bundle-analyzer": "^3.3.2",
 		"webpack-cli": "^3.3.0"
 	}
 }
